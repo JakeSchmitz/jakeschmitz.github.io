@@ -1,4 +1,4 @@
-import { Box, Button, Input, Textarea, VStack, HStack, Icon, Link, useToast } from '@chakra-ui/react'
+import { Box, Button, Input, Textarea, VStack, HStack, Icon, Link, useToast, useColorModeValue } from '@chakra-ui/react'
 import { FormControl, FormLabel } from '@chakra-ui/form-control'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { useState } from 'react'
@@ -8,6 +8,9 @@ const Contact = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const toast = useToast()
+
+  const inputBg = useColorModeValue('white', 'gray.100')
+  const inputText = useColorModeValue('gray.800', 'gray.900')
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -47,6 +50,10 @@ const Contact = () => {
                 placeholder="Your name" 
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                bg={inputBg}
+                color={inputText}
+                _hover={{ borderColor: 'blue.400' }}
+                _focus={{ borderColor: 'blue.500', boxShadow: '0 0 0 1px var(--chakra-colors-blue-500)' }}
               />
             </FormControl>
             <FormControl isRequired>
@@ -56,6 +63,10 @@ const Contact = () => {
                 placeholder="Your email" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                bg={inputBg}
+                color={inputText}
+                _hover={{ borderColor: 'blue.400' }}
+                _focus={{ borderColor: 'blue.500', boxShadow: '0 0 0 1px var(--chakra-colors-blue-500)' }}
               />
             </FormControl>
             <FormControl isRequired>
@@ -65,6 +76,10 @@ const Contact = () => {
                 rows={6} 
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                bg={inputBg}
+                color={inputText}
+                _hover={{ borderColor: 'blue.400' }}
+                _focus={{ borderColor: 'blue.500', boxShadow: '0 0 0 1px var(--chakra-colors-blue-500)' }}
               />
             </FormControl>
             <Button type="submit" colorScheme="blue" size="lg" width="full">
