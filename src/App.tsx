@@ -7,6 +7,7 @@ import Projects from './sections/Projects'
 import Skills from './sections/Skills'
 import Contact from './sections/Contact'
 import Gallery from './sections/Gallery'
+import Startups from './sections/Startups'
 
 const MotionBox = motion(Box)
 
@@ -23,6 +24,10 @@ function App() {
         >
           <Section id="about" title="About Me">
             <About />
+          </Section>
+
+          <Section id="startups" title="Startups">
+            <Startups />
           </Section>
 
           <Section id="projects" title="Projects">

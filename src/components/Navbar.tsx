@@ -5,7 +5,7 @@ import { useState } from 'react'
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('about')
 
-  const navItems = ['About', 'Projects', 'Skills', 'Contact']
+  const navItems = ['About', 'Startups', 'Projects', 'Skills', 'Contact']
 
   return (
     <Box
