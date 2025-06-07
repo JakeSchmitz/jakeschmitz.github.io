@@ -1,7 +1,12 @@
 import { Box, Flex, Button } from '@chakra-ui/react'
-import { Link } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll'
+import { useState } from 'react'
 
 const Navbar = () => {
+  const [activeSection, setActiveSection] = useState('about')
+
+  const navItems = ['About', 'Projects', 'Skills', 'Contact']
+
   return (
     <Box
       position="absolute"
@@ -17,11 +22,11 @@ const Navbar = () => {
       <Flex maxW="container.xl" mx="auto" justify="space-between" align="center">
         <Box fontWeight="bold" fontSize="xl" color="white" textShadow="0 2px 8px rgba(0,0,0,0.7)">Jake Schmitz</Box>
         <Flex gap={4}>
-          {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
+          {navItems.map((item) => (
             <Button
               key={item}
               variant="ghost"
-              as={Link}
+              as={ScrollLink}
               to={item.toLowerCase()}
               spy={true}
               smooth={true}
@@ -30,6 +35,9 @@ const Navbar = () => {
               color="white"
               _hover={{ bg: 'rgba(255,255,255,0.1)' }}
               textShadow="0 2px 8px rgba(0,0,0,0.7)"
+              isActive={activeSection === item.toLowerCase()}
+              onClick={() => setActiveSection(item.toLowerCase())}
+              onSetActive={() => setActiveSection(item.toLowerCase())}
             >
               {item}
             </Button>
