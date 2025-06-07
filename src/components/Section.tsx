@@ -24,7 +24,8 @@ const Section = ({ id, title, children }: SectionProps) => {
             size="xl"
             mb={8}
             textAlign="center"
-            color="brand.600"
+            color="white"
+            textShadow="0 2px 4px rgba(0,0,0,0.3)"
           >
             {title}
           </Heading>

@@ -1,6 +1,7 @@
 import { SimpleGrid, Box, Text, Icon, VStack } from '@chakra-ui/react'
-import { FaReact, FaNodeJs, FaPython, FaDatabase, FaAws } from 'react-icons/fa'
-import { SiTypescript, SiJavascript, SiRubyonrails } from 'react-icons/si'
+import { FaReact, FaDatabase, FaJava, FaProjectDiagram } from 'react-icons/fa'
+import { SiTypescript, SiGo, SiProducthunt } from 'react-icons/si'
+import { MdEngineering } from 'react-icons/md'
 
 interface Skill {
   name: string
@@ -20,34 +21,34 @@ const skills: Skill[] = [
     level: 'Expert'
   },
   {
-    name: 'JavaScript',
-    icon: SiJavascript,
+    name: 'Java',
+    icon: FaJava,
     level: 'Expert'
   },
   {
-    name: 'Ruby on Rails',
-    icon: SiRubyonrails,
-    level: 'Expert'
-  },
-  {
-    name: 'Node.js',
-    icon: FaNodeJs,
+    name: 'Go',
+    icon: SiGo,
     level: 'Advanced'
-  },
-  {
-    name: 'AWS',
-    icon: FaAws,
-    level: 'Advanced'
-  },
-  {
-    name: 'Python',
-    icon: FaPython,
-    level: 'Intermediate'
   },
   {
     name: 'Databases',
     icon: FaDatabase,
-    level: 'Advanced'
+    level: 'Expert'
+  },
+  {
+    name: 'Product Management',
+    icon: SiProducthunt,
+    level: 'Expert'
+  },
+  {
+    name: 'Engineering Leadership',
+    icon: MdEngineering,
+    level: 'Expert'
+  },
+  {
+    name: 'System Design',
+    icon: FaProjectDiagram,
+    level: 'Expert'
   }
 ]
 
