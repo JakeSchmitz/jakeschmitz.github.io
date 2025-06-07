@@ -12,14 +12,14 @@ const startups: Startup[] = [
   {
     name: 'Vantiq',
     description: 'Vantiq is a leading platform for creating and operating real-time intelligent systems. Their platform enables organizations to quickly build, deploy, and scale AI-powered systems that run anywhere, connect to anything, and take action in real-time.',
-    image: 'https://vantiq.com/wp-content/uploads/2023/03/vantiq-logo.svg',
+    image: 'https://vantiq.com/wp-content/themes/vantiq/assets/vantiq2019/site2024/vtqlogo-blue.svg',
     link: 'https://vantiq.com/',
-    role: 'Advisor'
+    role: 'Early Employee'
   },
   {
     name: 'Thriftly',
     description: 'Thriftly is revolutionizing the thrift store industry with their innovative 1-Click Production system. Their platform helps thrift stores price secondhand items in seconds, protect against tag switching, and automatically reprice by brand.',
-    image: 'https://www.thriftly.com/wp-content/uploads/2023/03/thriftly-logo.svg',
+    image: 'https://images.squarespace-cdn.com/content/v1/65276e73b97df56f17fdd216/b65f2b99-9ba3-40c1-8bec-a4c9fc654452/Logo_hi-res.png?format=1500w',
     link: 'https://www.thriftly.com/',
     role: 'Investor'
   }
