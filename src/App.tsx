@@ -16,7 +16,7 @@ function App() {
     <Box minH="100vh">
       <Navbar />
       <Gallery />
-      <Box bg="gray.800" color="white">
+      <Box bg="blue.50" color="white">
         <MotionBox
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
