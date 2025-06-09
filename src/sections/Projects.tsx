@@ -17,11 +17,11 @@ const projects: Project[] = [
     technologies: ['Robotics', 'Automation', 'React', 'AWS']
   },
   {
-    title: 'Social Science Library',
-    description: 'Developed a comprehensive library system for the Global Development and Environment Institute at Tufts University.',
-    image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80', // library/books
-    link: 'https://github.com/JakeSchmitz/SSL',
-    technologies: ['React', 'Node.js', 'MongoDB']
+    title: 'Vantiq App Builder',
+    description: 'Contributed to the development of the app builder at Vantiq, a platform for creating and operating real-time intelligent systems. Learn more about the platform.',
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80', // app builder
+    link: 'https://vantiq.com/platform/',
+    technologies: ['React', 'Node.js', 'AWS']
   },
   {
     title: 'Critiq',
