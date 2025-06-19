@@ -37,6 +37,18 @@ const Navbar = () => {
               {item}
             </Button>
           ))}
+          <Button
+            as="a"
+            href="https://ohschirtz.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="ghost"
+            color="white"
+            _hover={{ bg: 'rgba(255,255,255,0.1)' }}
+            textShadow="0 2px 8px rgba(0,0,0,0.7)"
+          >
+            Shop
+          </Button>
         </Flex>
       </Flex>
     </Box>
