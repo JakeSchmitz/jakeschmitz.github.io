@@ -22,13 +22,6 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80', // app builder
     link: 'https://vantiq.com/platform/',
     technologies: ['React', 'Node.js', 'AWS']
-  },
-  {
-    title: 'Critiq',
-    description: 'A feature-rich product review and voting platform built with Ruby on Rails, enabling users to create, review, and vote on products and features. Supports user profiles, product management, and social features.',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80', // review/feedback
-    link: 'https://github.com/JakeSchmitz/critiq',
-    technologies: ['Ruby on Rails', 'PostgreSQL', 'JavaScript', 'CSS']
   }
 ]
 
