@@ -2,7 +2,7 @@ import { Box, Flex, Button } from '@chakra-ui/react'
 import { Link as ScrollLink } from 'react-scroll'
 
 const Navbar = () => {
-  const navItems = ['About', 'Startups', 'Projects', 'Skills', 'Contact']
+  const navItems = ['About', 'Startups', 'Projects', 'Contact']
 
   return (
     <Box

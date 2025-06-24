@@ -12,9 +12,16 @@ const startups: Startup[] = [
   {
     name: 'Promptionary',
     description: 'Promptionary is an innovative social game that combines creativity with AI image generation. Players compete by creating prompts that generate the most engaging and creative AI-generated images, fostering a community of digital artists and prompt engineers.',
-    image: 'https://via.placeholder.com/200x60/6366F1/white?text=Promptionary',
+    image: '/promptionary.png',
     link: 'https://promptionary.ai',
     role: 'Founder & Creator'
+  },
+  {
+    name: 'Happy Returns',
+    description: 'Happy Returns is transforming the returns process for retailers and customers with a network of Return Bars and advanced warehouse automation, making returns faster, easier, and more sustainable.',
+    image: '/robots.png',
+    link: 'https://happyreturns.com/',
+    role: 'Staff Software Engineer'
   },
   {
     name: 'Vantiq',
