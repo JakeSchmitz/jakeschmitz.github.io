@@ -10,6 +10,13 @@ interface Startup {
 
 const startups: Startup[] = [
   {
+    name: 'Promptionary',
+    description: 'Promptionary is an innovative social game that combines creativity with AI image generation. Players compete by creating prompts that generate the most engaging and creative AI-generated images, fostering a community of digital artists and prompt engineers.',
+    image: 'https://via.placeholder.com/200x60/6366F1/white?text=Promptionary',
+    link: 'https://promptionary.ai',
+    role: 'Founder & Creator'
+  },
+  {
     name: 'Vantiq',
     description: 'Vantiq is a leading platform for creating and operating real-time intelligent systems. Their platform enables organizations to quickly build, deploy, and scale AI-powered systems that run anywhere, connect to anything, and take action in real-time.',
     image: 'https://vantiq.com/wp-content/themes/vantiq/assets/vantiq2019/site2024/vtqlogo-blue.svg',

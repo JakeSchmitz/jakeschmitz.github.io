@@ -39,6 +39,18 @@ const Navbar = () => {
           ))}
           <Button
             as="a"
+            href="https://promptionary.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="ghost"
+            color="white"
+            _hover={{ bg: 'rgba(255,255,255,0.1)' }}
+            textShadow="0 2px 8px rgba(0,0,0,0.7)"
+          >
+            Promptionary
+          </Button>
+          <Button
+            as="a"
             href="https://ohschirtz.com/"
             target="_blank"
             rel="noopener noreferrer"
