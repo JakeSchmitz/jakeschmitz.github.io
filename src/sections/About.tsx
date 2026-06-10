@@ -28,8 +28,8 @@ const About = () => {
           <Link href="https://vantiq.com/" color="blue.500" target="_blank" rel="noopener noreferrer">Vantiq</Link>, where he worked extensively on event-driven architecture and the company's low-code application builder.
         </Text>
         <Text fontSize="lg">
-          Currently, Jake is the Director of Engineering at{' '}
-          <Link href="https://happyreturns.com/" color="blue.500" target="_blank" rel="noopener noreferrer">Happy Returns</Link>, where he leads the Logistics, Platform, and Infrastructure engineering teams. Connect with Jake on{' '}
+          Most recently, Jake was the Director of Engineering at{' '}
+          <Link href="https://happyreturns.com/" color="blue.500" target="_blank" rel="noopener noreferrer">Happy Returns</Link>, where he led the Logistics, Platform, and Infrastructure engineering teams until March 2026. Connect with Jake on{' '}
           <Link href="https://www.linkedin.com/in/jacob-schmitz-17564763/" color="blue.500" target="_blank" rel="noopener noreferrer">LinkedIn</Link>.
         </Text>
       </VStack>

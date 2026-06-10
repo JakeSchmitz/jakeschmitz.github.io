@@ -10,10 +10,10 @@ interface Startup {
 
 const startups: Startup[] = [
   {
-    name: 'Promptionary',
-    description: 'Promptionary is an innovative social game that combines creativity with AI image generation. Players compete by creating prompts that generate the most engaging and creative AI-generated images, fostering a community of digital artists and prompt engineers.',
-    image: '/promptionary.png',
-    link: 'https://promptionary.ai',
+    name: 'Godwit',
+    description: 'Godwit is a hands-free birding companion for iOS that identifies the birds around you by ear — entirely on-device. Start a listening session and it builds your sighting list as you walk, with voice logging, route mapping, eBird-format exports, and live bird IDs displayed on AR glasses. No accounts, no tracking — your data stays on your device.',
+    image: '/godwit-icon.png',
+    link: '/godwit/privacy.html',
     role: 'Founder & Creator'
   },
   {
@@ -21,7 +21,7 @@ const startups: Startup[] = [
     description: 'Happy Returns is transforming the returns process for retailers and customers with a network of Return Bars and advanced warehouse automation, making returns faster, easier, and more sustainable.',
     image: '/robots.png',
     link: 'https://happyreturns.com/',
-    role: 'Staff Software Engineer'
+    role: 'Director of Engineering'
   },
   {
     name: 'Vantiq',
