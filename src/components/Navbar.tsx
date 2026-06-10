@@ -1,70 +1,37 @@
-import { Box, Flex, Button } from '@chakra-ui/react'
-import { Link as ScrollLink } from 'react-scroll'
+const links = [
+  { label: 'Godwit', href: '#godwit' },
+  { label: 'Field notes', href: '#field-notes' },
+  { label: 'Photography', href: '#photography' },
+  { label: 'Contact', href: '#contact' },
+]
 
 const Navbar = () => {
-  const navItems = ['About', 'Startups', 'Projects', 'Contact']
-
   return (
-    <Box
-      position="absolute"
-      top={0}
-      left={0}
-      w="100%"
-      bg="transparent"
-      px={4}
-      py={4}
-      shadow="none"
-      zIndex={1000}
-    >
-      <Flex maxW="container.xl" mx="auto" justify="space-between" align="center">
-        <Box fontWeight="bold" fontSize="xl" color="white" textShadow="0 2px 8px rgba(0,0,0,0.7)">Jake Schmitz</Box>
-        <Flex gap={4}>
-          {navItems.map((item) => (
-            <Button
-              key={item}
-              variant="ghost"
-              as={ScrollLink}
-              to={item.toLowerCase()}
-              spy={true}
-              smooth={true}
-              duration={500}
-              cursor="pointer"
-              color="white"
-              _hover={{ bg: 'rgba(255,255,255,0.1)' }}
-              textShadow="0 2px 8px rgba(0,0,0,0.7)"
-              activeClass="active-nav-btn"
+    <header className="sticky top-0 z-50 border-b border-edge bg-canvas/85 backdrop-blur">
+      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
+        <a href="#top" className="font-display text-lg font-semibold tracking-tight">
+          Jake Schmitz <span className="text-moss">●</span>
+        </a>
+        <div className="flex items-center gap-5 text-sm text-ink-2 sm:gap-7">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="hidden transition-colors hover:text-moss sm:inline"
             >
-              {item}
-            </Button>
+              {link.label}
+            </a>
           ))}
-          <Button
-            as="a"
-            href="/godwit/privacy.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="ghost"
-            color="white"
-            _hover={{ bg: 'rgba(255,255,255,0.1)' }}
-            textShadow="0 2px 8px rgba(0,0,0,0.7)"
+          <a
+            href="#contact"
+            className="rounded-full bg-moss px-4 py-1.5 font-medium text-white transition-colors hover:bg-moss-deep sm:hidden"
           >
-            Godwit
-          </Button>
-          <Button
-            as="a"
-            href="https://ohschirtz.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="ghost"
-            color="white"
-            _hover={{ bg: 'rgba(255,255,255,0.1)' }}
-            textShadow="0 2px 8px rgba(0,0,0,0.7)"
-          >
-            Shop
-          </Button>
-        </Flex>
-      </Flex>
-    </Box>
+            Contact
+          </a>
+        </div>
+      </nav>
+    </header>
   )
 }
 
-export default Navbar 
+export default Navbar

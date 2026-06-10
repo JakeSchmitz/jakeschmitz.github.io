@@ -1,44 +1,28 @@
-import { Box } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
 import Navbar from './components/Navbar'
-import Section from './components/Section'
-import About from './sections/About'
-import Projects from './sections/Projects'
+import Hero from './sections/Hero'
+import Godwit from './sections/Godwit'
+import FieldNotes from './sections/FieldNotes'
+import Photography from './sections/Photography'
 import Contact from './sections/Contact'
-import Gallery from './sections/Gallery'
-import Startups from './sections/Startups'
-
-const MotionBox = motion(Box)
 
 function App() {
   return (
-    <Box minH="100vh">
+    <div className="min-h-screen bg-canvas font-sans text-ink">
       <Navbar />
-      <Gallery />
-      <Box bg="#00A3E0" color="white">
-        <MotionBox
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Section id="about" title="About Me">
-            <About />
-          </Section>
-
-          <Section id="startups" title="Startups">
-            <Startups />
-          </Section>
-
-          <Section id="projects" title="Projects">
-            <Projects />
-          </Section>
-
-          <Section id="contact" title="Contact">
-            <Contact />
-          </Section>
-        </MotionBox>
-      </Box>
-    </Box>
+      <main>
+        <Hero />
+        <Godwit />
+        <FieldNotes />
+        <Photography />
+        <Contact />
+      </main>
+      <footer className="border-t border-edge py-8 text-center text-sm text-ink-2">
+        © 2026 Jake Schmitz ·{' '}
+        <a href="/godwit/privacy.html" className="underline-offset-4 hover:text-moss hover:underline">
+          Godwit privacy policy
+        </a>
+      </footer>
+    </div>
   )
 }
 
